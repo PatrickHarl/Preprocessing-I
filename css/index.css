@@ -1,1 +1,371 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+/*********My CSS Below**********/
+.website-container {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .website-container {
+    width: 100%;
+  }
+}
+.website-container .nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.website-container .nav-container nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3% 0;
+}
+@media (max-width: 500px) {
+  .website-container .nav-container nav {
+    width: 100%;
+  }
+}
+.website-container .nav-container nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.website-container .intro-container {
+  width: 100%;
+  border-radius: 5px;
+}
+.website-container .intro-container .resume-img {
+  width: 40%;
+}
+.website-container .intro-container h1 {
+  font-family: 'Sen', sans-serif;
+  font-size: 6rem;
+  padding: 1% 0;
+  font-weight: bold;
+}
+.website-container .intro-container h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 4%;
+  border-bottom: 1px solid grey;
+}
+.website-container .intro-container .header-contact {
+  margin: 4% 0 0 0;
+}
+.website-container .intro-container .header-contact p {
+  font-size: 1.6rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.website-container .intro-container .header-contact button {
+  font-family: 'Source Sans Pro', sans-serif;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1%;
+  background-color: #403f3f;
+  color: white;
+  font-size: 2rem;
+  margin-top: 3%;
+}
+.website-container .intro-container {
+  background-color: #D3D3D3;
+  padding: 5% 2%;
+}
+.website-container .mid-section-container {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .website-container .mid-section-container {
+    flex-wrap: wrap;
+  }
+}
+.website-container .mid-section-container .about-me {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .website-container .mid-section-container .about-me {
+    width: 100%;
+  }
+}
+.website-container .mid-section-container .about-me h2 {
+  font-family: 'Sen', sans-serif;
+  font-size: 3rem;
+  margin-top: 8%;
+  font-weight: bold;
+}
+.website-container .mid-section-container .about-me p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6rem;
+  margin-top: 2%;
+  line-height: 1.5;
+}
+.website-container .mid-section-container .skills {
+  width: 50%;
+  font-size: 1.6rem;
+  margin-top: 4.5%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+@media (max-width: 500px) {
+  .website-container .mid-section-container .skills {
+    width: 100%;
+  }
+}
+.website-container .mid-section-container .skills .skill1 {
+  border: 1px solid lightgrey;
+  padding: 3%;
+  margin-top: 2%;
+}
+.website-container .mid-section-container .skills .skill2 {
+  border-bottom: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  padding: 3%;
+}
+.website-container .mid-section-container .skills .skill3 {
+  border-bottom: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  padding: 3%;
+}
+.website-container .mid-section-container .skills .skill4 {
+  border-bottom: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  padding: 3%;
+}
+.website-container .mid-section-container .skills .skill5 {
+  border-bottom: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  padding: 3%;
+}
+.website-container .mid-section-container .skills h3 {
+  font-family: 'Sen', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.website-container .work-history {
+  font-size: 1.6rem;
+  margin-top: 5%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.website-container .work-history h3 {
+  font-family: 'Sen', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1%;
+  font-weight: bold;
+}
+.website-container .work-history .work-layout-titles {
+  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
+  padding: 1.5%;
+  display: flex;
+  font-weight: bold;
+}
+.website-container .work-history .work-layout-titles .title1 {
+  width: 10%;
+}
+.website-container .work-history .work-layout-titles .title2 {
+  width: 25%;
+}
+.website-container .work-history .work-layout-titles .title3 {
+  width: 40%;
+}
+.website-container .work-history .work-layout-titles .title4 {
+  width: 25%;
+}
+.website-container .work-history .company1 {
+  padding: 1.5%;
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+}
+.website-container .work-history .company1 .years {
+  width: 10%;
+}
+.website-container .work-history .company1 .company-name {
+  width: 25%;
+}
+.website-container .work-history .company1 .my-title {
+  width: 40%;
+}
+.website-container .work-history .company1 .tech {
+  width: 25%;
+}
+.website-container .work-history .company2 {
+  padding: 1.5%;
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+}
+.website-container .work-history .company2 .years {
+  width: 10%;
+}
+.website-container .work-history .company2 .company-name {
+  width: 25%;
+}
+.website-container .work-history .company2 .my-title {
+  width: 40%;
+}
+.website-container .work-history .company2 .tech {
+  width: 25%;
+}
+.website-container .work-history .company3 {
+  padding: 1.5%;
+  display: flex;
+}
+.website-container .work-history .company3 .years {
+  width: 10%;
+}
+.website-container .work-history .company3 .company-name {
+  width: 25%;
+}
+.website-container .work-history .company3 .my-title {
+  width: 40%;
+}
+.website-container .work-history .company3 .tech {
+  width: 25%;
+}
+.website-container footer {
+  font-size: 1.6rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  background-color: #403f3f;
+  text-align: center;
+  padding: 3% 0;
+  margin-top: 4%;
+}
