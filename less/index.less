@@ -4,6 +4,31 @@
    License: none (public domain)
 */
 
+@bgLightGrey:#D3D3D3;
+@linkBlack:black;
+@headerFont: 'Sen', sans-serif;
+@textFont: 'Source Sans Pro', sans-serif;
+@basicTextSize:1.6rem;
+@linkTextSize:1.8rem;
+@h4TextSize: 2rem;
+@h3TextSize: 2.5rem;
+@h2TextSize: 3rem;
+@h1TextSize: 6rem;
+@headerWeight:bold;
+@darkAccentColor:#403f3f;
+@darkAccentColorText:white;
+
+.skillsLayout() {
+	border-bottom:1px solid lightgrey;
+	border-left:1px solid lightgrey;
+	border-right:1px solid lightgrey;
+	padding:3%;
+}
+.workXPLayout(){
+	padding:1.5%;
+	display:flex;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,7 +44,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	//border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -54,6 +79,260 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size:62.5%;
 }
+
+/*********My CSS Below**********/
+
+
+
+.website-container{
+	width:50%;
+	margin:0 auto;
+	
+	@media (max-width:500px){
+		width:100%;
+	}
+
+		.nav-container{
+			width:100%;
+			display:flex;
+			justify-content:flex-end;
+
+			nav{
+				width:40%;
+				display:flex;
+				justify-content:space-evenly;
+				margin:3% 0;
+
+				@media (max-width:500px){
+					width:100%;
+				}
+
+				a{
+					text-decoration:none;
+					color: @linkBlack;
+					font-size:@linkTextSize;
+					font-weight:@headerWeight;
+					font-family:@textFont;
+				}
+			}
+		}
+
+	.intro-container{
+		width:100%;
+		border-radius:5px;
+
+		.resume-img{
+			width:40%;
+		}
+
+		h1{
+			font-family:@headerFont;
+			font-size:@h1TextSize;
+			padding:1% 0;
+			font-weight:@headerWeight;
+		}
+		h4{
+			font-family:@textFont;
+			font-size:@h4TextSize;
+			padding-bottom:4%;
+			border-bottom:1px solid grey;
+		}
+		.header-contact{
+			margin:4% 0 0 0;
+
+			p{
+				font-size:@basicTextSize;
+				font-family:@textFont;
+			}
+			button{
+				font-family:@textFont;
+				border-radius:5px;
+				border-style:none;
+				padding:1%;
+				background-color:@darkAccentColor;
+				color:@darkAccentColorText;
+				font-size:@h4TextSize;
+				margin-top:3%;
+			}
+		}
+	}
+
+	.intro-container{
+		background-color:@bgLightGrey;
+		padding:5% 2%;
+	}
+	.mid-section-container{
+		display:flex;
+
+		@media (max-width:500px){
+			flex-wrap:wrap;
+		}
+
+		.about-me{
+			width:50%;
+
+			@media (max-width:500px){
+				width:100%;
+			}
+
+			h2{
+				font-family:@headerFont;
+				font-size:@h2TextSize;
+				margin-top:8%;
+				font-weight:@headerWeight;
+			}
+
+			p{
+			font-family:@textFont;
+			font-size:@basicTextSize;
+			margin-top:2%;
+			line-height:1.5;
+			}
+		}
+		
+		.skills{
+			width:50%;
+			font-size:@basicTextSize;
+			margin-top:4.5%;
+			font-family:@textFont;
+
+			@media (max-width:500px){
+				width:100%;
+			}
+
+			.skill1{
+				border:1px solid lightgrey;
+				padding:3%;
+				margin-top:2%;
+			}
+			.skill2{
+				.skillsLayout();
+			}
+			.skill3{
+				.skillsLayout();
+			}
+			.skill4{
+				.skillsLayout();
+			}
+			.skill5{
+				.skillsLayout();
+			}
+
+			h3{
+				font-family:@headerFont;
+				font-size:@h3TextSize;
+				font-weight:@headerWeight;
+			}
+		}
+	
+	}
+
+	.work-history{
+
+		font-size:@basicTextSize;
+		margin-top:5%;
+		font-family:@textFont;
+
+		h3{
+			font-family:@headerFont;
+			font-size:@h3TextSize;
+			margin-bottom:1%;
+			font-weight:@headerWeight;
+		}
+
+		.work-layout-titles{
+			border-bottom:1px solid lightgrey;
+			border-top:1px solid lightgrey;
+			.workXPLayout();
+			font-weight:@headerWeight;
+
+			.title1{
+				width:10%;
+			}
+
+			.title2{
+				width:25%;
+			}
+
+			.title3{
+				width:40%;
+			}
+
+			.title4{
+				width:25%;
+			}
+		}
+
+		.company1{
+			.workXPLayout();
+			border-bottom:1px solid lightgrey;
+			
+			.years{
+				width:10%;
+			}
+			.company-name{
+				width:25%
+			}
+			.my-title{
+				width:40%;
+			}
+			.tech{
+				width:25%;
+			}
+		}
+
+		.company2{
+			.workXPLayout();
+			border-bottom:1px solid lightgrey;
+
+			.years{
+				width:10%;
+			}
+			.company-name{
+				width:25%
+			}
+			.my-title{
+				width:40%;
+			}
+			.tech{
+				width:25%;
+			}
+		}
+
+		.company3{
+			.workXPLayout();
+
+			.years{
+				width:10%;
+			}
+			.company-name{
+				width:25%
+			}
+			.my-title{
+				width:40%;
+			}
+			.tech{
+				width:25%;
+			}
+		}
+	}
+	footer{
+		font-size:@basicTextSize;
+		font-family:@textFont;
+		color:@darkAccentColorText;
+		background-color:@darkAccentColor;
+		text-align:center;
+		padding:3% 0;
+		margin-top:4%;
+		
+	}
+}
+
+
+
+
+
 
